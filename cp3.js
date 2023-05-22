@@ -113,3 +113,14 @@ inputSubmit.addEventListener("click", () => {
         alert("As senhas estão diferentes. Por favor, coloque a mesma senha.")
     }
 });
+
+//Dark Mode
+
+function toggleMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+
+    
+    const modoDarkMode = body.classList.contains('dark-mode');
+    localStorage.setItem('dark-mode', modoDarkMode);
+}
