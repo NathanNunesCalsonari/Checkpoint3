@@ -65,18 +65,18 @@ inputPass.addEventListener("keyup", () => {
 
 });
 
-const inputConf = document.querySelector("#idConfPass");
+const inputConfirmar = document.querySelector("#idConfirmarPass");
 
-inputConf.addEventListener("keyup", () => {
+inputConfirmar.addEventListener("keyup", () => {
 
-    const lblConf = document.querySelector("label[for='idConfPass']");
+    const lblConfirmar = document.querySelector("label[for='idConfirmarPass']");
 
-    if (inputConf.value != inputPass.value) {
-        inputConf.setAttribute("style", "outline-color:#ff0000;");
-        lblConf.setAttribute("style", "color:#ff0000;");
+    if (inputConfirmar.value != inputPass.value) {
+        inputConfirmar.setAttribute("style", "outline-color:#ff0000;");
+        lblConfirmar.setAttribute("style", "color:#ff0000;");
     } else {
-        inputConf.setAttribute("style", "outline-color:#00ff00;");
-        lblConf.setAttribute("style", "color:#00ff00;");
+        inputConfirmar.setAttribute("style", "outline-color:#00ff00;");
+        lblConfirmar.setAttribute("style", "color:#00ff00;");
     }
 
 
