@@ -109,4 +109,7 @@ inputSubmit.addEventListener("click", () => {
     if (inputPass.value.length < 6 || inputPass.value.length > 8) {
         alert("A senha precisa ter no minímo 6 caracteres e no máximo 8 para ser válida.")
     }
+    if (inputConf.value != inputPass.value) {
+        alert("As senhas estão diferentes. Por favor, coloque a mesma senha.")
+    }
 });
