@@ -25,3 +25,11 @@ body.dark-mode {
 #formulario label {
     font-weight: bold;
 }
+
+#formulario input[type="text"],
+#formulario input[type="email"],
+#formulario input[type="password"] {
+
+    width: 92%;
+    padding: 5px;
+}
