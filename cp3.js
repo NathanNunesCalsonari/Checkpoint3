@@ -95,20 +95,29 @@ const inputSubmit = document.querySelector("#btnSubmit");
 
 inputSubmit.addEventListener("click", () => {
 
+    //Validação para o primeiro nome
     if (inputFirstName.value.length < 5) {
         alert("O primeiro nome necessita ter no minímo 5 caracteres para estar válido.")
     }
+
+     //Validação para o segundo nome
     if (inputLastName.value.length < 5) {
         alert("O segundo nome necessita ter no minímo 5 caracteres para estar válido.")
     }
+
+     //Validação para o email
     if (inputEmail.value.length < 5) {
         alert("O e-mail precisa ter no minímo 5 caracteres e também é necessário ter o @ para estar válido");
     } else if (JSON.stringify(inputEmail.value).includes("@") == false) {
         alert("O e-mail precisa ter um @ para ser válido")
     }
+
+     //Validação para a senha
     if (inputPass.value.length < 6 || inputPass.value.length > 8) {
         alert("A senha precisa ter no minímo 6 caracteres e no máximo 8 para ser válida.")
     }
+
+     //Validação para confirmar a senha
     if (inputConf.value != inputPass.value) {
         alert("As senhas estão diferentes. Por favor, coloque a mesma senha.")
     }
