@@ -101,4 +101,9 @@ inputSubmit.addEventListener("click", () => {
     if (inputLastName.value.length < 5) {
         alert("O segundo nome necessita ter no minímo 5 caracteres para estar válido.")
     }
+    if (inputEmail.value.length < 5) {
+        alert("O e-mail precisa ter no minímo 5 caracteres e também é necessário ter o @ para estar válido");
+    } else if (JSON.stringify(inputEmail.value).includes("@") == false) {
+        alert("O e-mail precisa ter um @ para ser válido")
+    }
 });
