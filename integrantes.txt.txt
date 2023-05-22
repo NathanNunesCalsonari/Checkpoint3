@@ -3,3 +3,9 @@ Calina Thalya Santana da Silva – 552523
 Gabriel Henrique - 99463
 Nathan Nunes Calsonari- 552539
 Leonardo Camargo Lucena- 552537
+
+URL repositório: https://github.com/NathanNunesCalsonari/Checkpoint3.git
+
+link: https://github.com/NathanNunesCalsonari/Checkpoint3
+
+gitpages: https://nathannunescalsonari.github.io/Checkpoint3/
