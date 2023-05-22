@@ -1,3 +1,5 @@
+//Primeiro Nome
+
 const inputFirstName = document.querySelector("#idFirstName");
 
 inputFirstName.addEventListener("keyup", () => {
@@ -13,6 +15,8 @@ inputFirstName.addEventListener("keyup", () => {
     }
 
 });
+
+//Segundo Nome
 
 const inputLastName = document.querySelector("#idLastName");
 
@@ -30,8 +34,9 @@ inputLastName.addEventListener("keyup", () => {
 
 });
 
-const inputEmail = document.querySelector("#idEmail");
+//Email
 
+const inputEmail = document.querySelector("#idEmail");
 
 inputEmail.addEventListener("keyup", () => {
 
@@ -48,6 +53,8 @@ inputEmail.addEventListener("keyup", () => {
 
 });
 
+//Senha
+
 const inputPass = document.querySelector("#idPass");
 
 inputPass.addEventListener("keyup", () => {
@@ -62,8 +69,9 @@ inputPass.addEventListener("keyup", () => {
         lblPass.setAttribute("style", "color:#00ff00;");
     }
 
-
 });
+
+//Confirmar senha
 
 const inputConfirmar = document.querySelector("#idConfirmarPass");
 
@@ -78,6 +86,5 @@ inputConfirmar.addEventListener("keyup", () => {
         inputConfirmar.setAttribute("style", "outline-color:#00ff00;");
         lblConfirmar.setAttribute("style", "color:#00ff00;");
     }
-
 
 });
