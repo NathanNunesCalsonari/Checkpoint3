@@ -88,3 +88,14 @@ inputConfirmar.addEventListener("keyup", () => {
     }
 
 });
+
+//Validação
+
+const inputSubmit = document.querySelector("#btnSubmit");
+
+inputSubmit.addEventListener("click", () => {
+
+    if (inputFirstName.value.length < 5) {
+        alert("O primeiro nome necessita ter no minímo 5 caracteres para estar válido.")
+    }
+});
