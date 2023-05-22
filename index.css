@@ -21,3 +21,7 @@ body.dark-mode {
     flex-direction: column;
     margin-bottom: 15px;
 }
+
+#formulario label {
+    font-weight: bold;
+}
