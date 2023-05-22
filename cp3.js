@@ -124,3 +124,7 @@ function toggleMode() {
     const modoDarkMode = body.classList.contains('dark-mode');
     localStorage.setItem('dark-mode', modoDarkMode);
 }
+
+const DarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+const savedMode = localStorage.getItem('dark-mode');
