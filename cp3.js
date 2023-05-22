@@ -64,3 +64,20 @@ inputPass.addEventListener("keyup", () => {
 
 
 });
+
+const inputConf = document.querySelector("#idConfPass");
+
+inputConf.addEventListener("keyup", () => {
+
+    const lblConf = document.querySelector("label[for='idConfPass']");
+
+    if (inputConf.value != inputPass.value) {
+        inputConf.setAttribute("style", "outline-color:#ff0000;");
+        lblConf.setAttribute("style", "color:#ff0000;");
+    } else {
+        inputConf.setAttribute("style", "outline-color:#00ff00;");
+        lblConf.setAttribute("style", "color:#00ff00;");
+    }
+
+
+});
