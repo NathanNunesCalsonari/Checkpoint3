@@ -134,3 +134,6 @@ if (savedMode !== null) {
 } else {
     document.body.classList.toggle('dark-mode', prefersDarkMode);
 }
+
+const toggleButton = document.getElementById('meu-btn');
+toggleButton.addEventListener('click', toggleMode);
