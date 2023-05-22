@@ -13,3 +13,19 @@ inputFirstName.addEventListener("keyup", () => {
     }
 
 });
+
+const inputLastName = document.querySelector("#idUltimoNome");
+
+inputLastName.addEventListener("keyup", () => {
+
+    const lblLastName = document.querySelector("label[for='idUltimoNome']");
+
+    if (inputLastName.value.length < 5) {
+        inputLastName.setAttribute("style", "outline-color:#ff0000;");
+        lblLastName.setAttribute("style", "color:#ff0000;");
+    } else {
+        inputLastName.setAttribute("style", "outline-color:#00ff00;");
+        lblLastName.setAttribute("style", "color:#00ff00;");
+    }
+
+});
