@@ -47,3 +47,20 @@ inputEmail.addEventListener("keyup", () => {
     }
 
 });
+
+const inputPass = document.querySelector("#idPass");
+
+inputPass.addEventListener("keyup", () => {
+
+    const lblPass = document.querySelector("label[for='idPass']");
+
+    if (inputPass.value.length < 5 || inputPass.value.length > 8) {
+        inputPass.setAttribute("style", "outline-color:#ff0000;");
+        lblPass.setAttribute("style", "color:#ff0000;");
+    } else {
+        inputPass.setAttribute("style", "outline-color:#00ff00;");
+        lblPass.setAttribute("style", "color:#00ff00;");
+    }
+
+
+});
