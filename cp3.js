@@ -106,4 +106,7 @@ inputSubmit.addEventListener("click", () => {
     } else if (JSON.stringify(inputEmail.value).includes("@") == false) {
         alert("O e-mail precisa ter um @ para ser válido")
     }
+    if (inputPass.value.length < 6 || inputPass.value.length > 8) {
+        alert("A senha precisa ter no minímo 6 caracteres e no máximo 8 para ser válida.")
+    }
 });
