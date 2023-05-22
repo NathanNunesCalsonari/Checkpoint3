@@ -14,11 +14,11 @@ inputFirstName.addEventListener("keyup", () => {
 
 });
 
-const inputLastName = document.querySelector("#idUltimoNome");
+const inputLastName = document.querySelector("#idLastName");
 
 inputLastName.addEventListener("keyup", () => {
 
-    const lblLastName = document.querySelector("label[for='idUltimoNome']");
+    const lblLastName = document.querySelector("label[for='idLastName']");
 
     if (inputLastName.value.length < 5) {
         inputLastName.setAttribute("style", "outline-color:#ff0000;");
