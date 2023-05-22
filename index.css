@@ -9,27 +9,59 @@ body.dark-mode {
     color: #f5f5f5;
 }
 
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; 
+    height: 100vh;
+}
+
+#formulario {
+    width: 350px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#formulario fieldset {
+    border: none;
+    padding: 0;
+}
+
+#formulario legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 #formulario div {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 15px;
 }
 
 #formulario label {
+    display: block;
     font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
 }
 
 #formulario input[type="text"],
 #formulario input[type="email"],
 #formulario input[type="password"] {
-
-    width: 92%;
-    padding: 5px;
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
+
+
+
+
+
+
