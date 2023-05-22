@@ -13,15 +13,16 @@
 </head>
 <body>
     <div>
-        <form action="index.html" method="GET" onsubmit="return false">
-            <legend>Formulário de cadastro</legend>
+        <form id="formulario" action="index.html" method="get" onsubmit="return false">
+            <fieldset>
+                <legend>Formulário de Cadastro</legend>
                 <div>
-                    <label for="idName">Primeiro nome</label>
-                    <input type="name" name="txtname" id="idName" placeholder="nome">
+                    <label for="idPrimeiroNome">Primeiro Nome</label>
+                    <input type="text" name="txtNome1" id="idFirstName" placeholder="Primerio Nome">
                 </div>
                 <div>
-                    <label for="idName">Segundo nome</label>
-                    <input type="name" name="txtname" id="idName" placeholder="nome">
+                    <label for="idSegundoNome">Segundo Nome</label>
+                    <input type="text" name="txtNome2" id="idLastName" placeholder="Segundo Nome">   
                 </div>
                 <div>
                     <label for="idEmail">Email</label>
@@ -33,13 +34,14 @@
                     <i class="fa fa-eye" aria-hidden="true"></i>
                 </div>
                 <div>
-                    <label for="idPass">Confirmação de senha</label>
-                    <input type="password" name="confirmacaoSenha" id="confirmacaoSenha" placeholder="Senha">
+                    <label for="idConfirmarPass">Confirmar senha</label>
+                    <input type="password" name="txtConfirmarPass" id="idConfPass" placeholder="Confirmar senha">
                     <i class="fa fa-eye" aria-hidden="true"></i>
                 </div>
                 <div>
-                    <button type="submit" id="btnSubmit">Confirmar</button>
+                    <button type="submit" id="btnSubmit">Registrar-se</button>
                 </div>
+            </fieldset>
         </form>
     </div>
 </body>
