@@ -4,7 +4,7 @@ inputFirstName.addEventListener("keyup", () => {
 
     const lblFirstName = document.querySelector("label[for='idFirstName']");
 
-    if (inputFirstName.value.length) {
+    if (inputFirstName.value.length < 5) {
         inputFirstName.setAttribute("style", "outline-color:#ff0000;");
         lblFirstName.setAttribute("style", "color:#ff0000;");
     } else {
@@ -37,7 +37,7 @@ inputEmail.addEventListener("keyup", () => {
 
     const lblEmail = document.querySelector("label[for='idEmail']");
 
-    if (inputEmail.value.length) {
+    if (inputEmail.value.length < 5 || JSON.stringify(inputEmail.value).includes("@") == false) {
         inputEmail.setAttribute("style", "outline-color:#ff0000;");
         lblEmail.setAttribute("style", "color:#ff0000;");
     } else {
